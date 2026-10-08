@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 read -p "Prenom:" prenom
-echo "Hello $prenom"
+read -p "Nom:" nom
+echo "Hello $prenom $nom"
