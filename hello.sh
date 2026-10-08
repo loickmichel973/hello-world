@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-read -p "Prenom:" prenom
-read -p "Nom:" nom
-echo "Hello $prenom $nom"
+if [ "$#" == 2 ]; then
+	echo "Hello $1 and $2"
+elif [ "$#" -le 2 ]; then
+	echo "Hello $1"
+else
+	echo "Hello everyone"
+fi
